@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 import { getAllDocs } from "@/lib/content";
 import { absoluteUrl, siteDescription, siteName } from "@/lib/seo";
 const xmlEscape = (s: string) => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");

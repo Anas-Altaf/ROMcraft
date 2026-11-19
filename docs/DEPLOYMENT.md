@@ -38,7 +38,7 @@ npm run build
 - Confirm dark mode persists after refresh and has acceptable contrast.
 - Search terms: `vbmeta`, `sideload`, `EFS`, `eureka`, `magisk`, `SIM`.
 - Open the Galaxy A10 full runbook, a long table and a document containing PowerShell commands; test copy controls.
-- Test `/sitemap.xml`, `/robots.txt`, `/feed.xml`, `/opengraph-image`, unknown 404 pages and page canonical metadata.
+- Test `/sitemap.xml`, `/robots.txt`, `/feed.xml`, `/og-card.png`, unknown 404 pages and page canonical metadata.
 - Run automated Lighthouse or axe accessibility checks plus manual screen reader testing.
 - Test high-contrast and reduced-motion settings.
 
@@ -57,9 +57,9 @@ git remote add origin <YOUR_GITHUB_REPOSITORY_URL>
 git push -u origin main
 ```
 
-## 6. Deploy
+## 6. Deploy statically with GitHub Pages
 
-You can deploy to a Next.js-compatible host such as Vercel. Import the GitHub repository; it should detect the Next.js framework. Ensure environment variables are set and the production build succeeds. Check canonical URLs and security of the production domain after deployment. No database, API keys or external search service are needed for the content site.
+Follow **[GITHUB_PAGES.md](GITHUB_PAGES.md)**. The repository is configured for `output: "export"`; `npm run build` produces the `out/` directory and `.github/workflows/deploy-pages.yml` publishes it through GitHub Actions. The workflow calculates the repository subpath automatically. No Node server or API endpoints are required on the live host.
 
 ## Build status at handoff
 

@@ -34,3 +34,12 @@ The npm registry could not be resolved (`EAI_AGAIN`). **`npm install`, `npm run 
 4. Set a real HTTPS `NEXT_PUBLIC_SITE_URL`; check sitemap, robots, canonical URLs and OG image.
 5. Final editorial peer review of all dangerous flash and restore procedures; verify external release links again before public publication.
 6. Choose and add a formal license before publishing reusable source/docs.
+
+## GitHub Pages static-export adaptation (2026-11-19)
+
+- Added `output: "export"`, `trailingSlash: true`, and build-time repository `basePath`.
+- Search query handling moved to browser hydration; `searchParams` no longer blocks static rendering.
+- RSS route explicitly marked `force-static`. Runtime Next.js headers removed.
+- Static Open Graph PNG replaces generated image route; metadata and manifest URLs are subpath-aware.
+- Added official GitHub Pages Actions workflow and static-hosting regression tests.
+- **Still unverified here:** dependency installation and the actual `next build` / browser audit, because npm DNS is inaccessible.

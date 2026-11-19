@@ -5,6 +5,6 @@ export default function robots(): MetadataRoute.Robots {
   const publicSite = /^https:\/\//.test(siteOrigin) && !siteOrigin.includes(".example");
   return {
     rules: publicSite ? [{ userAgent: "*", allow: "/" }] : [{ userAgent: "*", disallow: "/" }],
-    ...(publicSite ? { sitemap: `${siteOrigin}/sitemap.xml`, host: siteOrigin } : {}),
+    ...(publicSite ? { sitemap: `${siteOrigin}/sitemap.xml` } : {}),
   };
 }

@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import Link from "next/link";
-import { siteDescription, siteName, siteOrigin } from "@/lib/seo";
+import { absoluteUrl, siteDescription, siteName, siteOrigin } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,15 +9,15 @@ export const metadata: Metadata = {
   title: { default: `${siteName} — Android Research Hub`, template: `%s | ${siteName}` },
   description: siteDescription,
   applicationName: siteName,
-  alternates: { canonical: "/", types: { "application/rss+xml": "/feed.xml" } },
+  alternates: { canonical: absoluteUrl("/"), types: { "application/rss+xml": absoluteUrl("/feed.xml") } },
   openGraph: {
     type: "website", locale: "en_US", siteName, url: siteOrigin,
     title: siteName, description: siteDescription,
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "ROMcraft Fieldnotes" }],
+    images: [{ url: absoluteUrl("/og-card.png"), width: 1200, height: 630, alt: "ROMcraft Fieldnotes" }],
   },
-  twitter: { card: "summary_large_image", title: siteName, description: siteDescription, images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: siteName, description: siteDescription, images: [absoluteUrl("/og-card.png")] },
   robots: { index: siteOrigin.startsWith("https://") && !siteOrigin.includes(".example"), follow: true },
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: absoluteUrl("/favicon.svg") },
 };
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: [

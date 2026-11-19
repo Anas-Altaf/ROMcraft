@@ -7,7 +7,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 
 test('Next.js App Router and SEO conventions are present',()=>{
-  for (const route of ['layout.tsx','page.tsx','robots.ts','sitemap.ts','manifest.ts','opengraph-image.tsx','feed.xml/route.ts','search/page.tsx','[section]/[...slug]/page.tsx']) {
+  for (const route of ['layout.tsx','page.tsx','robots.ts','sitemap.ts','manifest.ts','feed.xml/route.ts','search/page.tsx','[section]/[...slug]/page.tsx']) {
     assert.ok(fs.existsSync(path.join(root,'src/app',route)),route);
   }
   assert.match(read('src/app/layout.tsx'),/skip-link/);

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 
 /** Set NEXT_PUBLIC_SITE_URL in deployment to your real HTTPS origin. */
+// NEXT_PUBLIC_SITE_URL should include the repository subpath on GitHub Pages:
+// https://OWNER.github.io/REPO. It is used for canonical and sharing URLs.
 export const siteOrigin = (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, "");
 export const siteName = "ROMcraft Fieldnotes";
 export const siteDescription = "Recovery-first Android field guides, custom-ROM analysis, device-specific evidence and safe rollback research.";
@@ -13,16 +15,16 @@ export function pageMetadata(title: string, description: string, pathname: strin
   return {
     title,
     description,
-    alternates: { canonical: pathname },
+    alternates: { canonical: absoluteUrl(pathname) },
     openGraph: {
       title: `${title} | ${siteName}`,
       description,
       type: "article",
       siteName,
       url: absoluteUrl(pathname),
-      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "ROMcraft Fieldnotes" }],
+      images: [{ url: absoluteUrl("/og-card.png"), width: 1200, height: 630, alt: "ROMcraft Fieldnotes" }],
     },
-    twitter: { card: "summary_large_image", title, description, images: ["/opengraph-image"] },
+    twitter: { card: "summary_large_image", title, description, images: [absoluteUrl("/og-card.png")] },
   };
 }
 
