@@ -1,5 +1,8 @@
 import type { MetadataRoute } from "next";
 import { siteOrigin } from "@/lib/seo";
+
+export const dynamic = "force-static";
+
 export default function robots(): MetadataRoute.Robots {
   // Do not expose unfinished localhost/provisional domains to search engines.
   const publicSite = /^https:\/\//.test(siteOrigin) && !siteOrigin.includes(".example");

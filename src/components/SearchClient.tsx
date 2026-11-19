@@ -1,19 +1,25 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Search, X } from "lucide-react";
 
 type Item = { href: string; title: string; description: string; excerpt: string; section: string; tags: string[]; status: string; searchText: string };
 const label = (s: string) => s === "all" ? "All topics" : s.replaceAll("-", " ");
 
+function subscribeToLocation(onChange: () => void) {
+  window.addEventListener("popstate", onChange);
+  return () => window.removeEventListener("popstate", onChange);
+}
+
+function getLocationQuery() {
+  return new URLSearchParams(window.location.search).get("q")?.slice(0, 200) ?? "";
+}
+
 export default function SearchClient({ items }: { items: Item[] }) {
-  const [query, setQuery] = useState("");
-  // Search query is read after hydration; this page must be pre-renderable.
-  useEffect(() => {
-    const q = new URLSearchParams(window.location.search).get("q");
-    if (q) setQuery(q.slice(0, 200));
-  }, []);
+  const locationQuery = useSyncExternalStore(subscribeToLocation, getLocationQuery, () => "");
+  const [editedQuery, setQuery] = useState<string>();
+  const query = editedQuery ?? locationQuery;
   const [section, setSection] = useState("all");
   const input = useRef<HTMLInputElement>(null);
   useEffect(() => {

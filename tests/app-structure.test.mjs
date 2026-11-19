@@ -28,7 +28,13 @@ test('theme and mobile menu expose accessible controls',()=>{
   assert.match(read('src/app/globals.css'),/prefers-reduced-motion/);
 });
 test('repository contains no binary firmware or logged private research',()=>{
-  function walk(dir) {return fs.readdirSync(dir,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(path.join(dir,x.name)):[path.join(dir,x.name)]);}
+  function walk(dir) {
+    return fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>{
+      const entryPath=path.join(dir,entry.name);
+      if (entry.isDirectory() && dir===root && entry.name==='.next') return [];
+      return entry.isDirectory()?walk(entryPath):[entryPath];
+    });
+  }
   const forbidden=/\.(?:img|pcap|pcapng|tar|zip|apk|md5|log|keystore)$/i;
   const matches=walk(root).filter(x=>forbidden.test(x));
   assert.deepEqual(matches, []);
