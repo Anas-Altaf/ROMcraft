@@ -1,0 +1,10 @@
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { verifyDocs } from './content-audit.mjs';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const report = verifyDocs(root);
+console.log(`ROMcraft content audit: ${report.docs} documents across ${report.sections} sections`);
+for (const x of report.warnings) console.warn('WARN:', x);
+for (const x of report.errors) console.error('ERROR:', x);
+console.log(`${report.errors.length} errors; ${report.warnings.length} warnings`);
+if (report.errors.length) process.exitCode=1;

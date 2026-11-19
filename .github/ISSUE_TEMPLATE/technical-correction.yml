@@ -1,0 +1,29 @@
+name: Technical correction
+description: Report an incorrect or unsafe Android instruction with sanitized evidence.
+title: "[Correction] "
+labels: [documentation, verification]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not submit phone serials, IMEIs, EFS images, unredacted logs, or personal account details."
+  - type: input
+    id: article
+    attributes:
+      label: Article URL or path
+      placeholder: content/02-guides/...
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: What is inaccurate or potentially unsafe?
+      description: Include exact command/heading, minus private values.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting source or sanitized observation
+      description: Link official docs or describe exact model, OS and firmware when relevant.
+    validations:
+      required: true

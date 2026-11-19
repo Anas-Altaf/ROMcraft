@@ -1,0 +1,41 @@
+# Next.js and node
+/node_modules
+/.next
+/out
+/build
+/.turbo
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Local configuration
+.env*
+!.env.example
+
+# Sensitive research: NEVER commit firmware, captures, EFS or local logs
+*.img
+*.tar
+*.tar.md5
+*.lz4
+*.pcap
+*.pcapng
+*.ab
+*.apks
+*.apk
+*.log
+*.bak
+*.zip
+*.7z
+*.bin
+*.key
+*.pem
+*.keystore
+*.md5
+
+# Editor and OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

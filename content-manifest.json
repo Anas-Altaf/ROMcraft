@@ -1,0 +1,613 @@
+{
+  "brand": "ROMcraft Fieldnotes",
+  "updated": "2026-11-18",
+  "phase": "standalone-nextjs-source-handoff",
+  "documentCount": 67,
+  "documents": [
+    {
+      "path": "content/00-start-here/evidence-and-accuracy.md",
+      "title": "Evidence and accuracy policy",
+      "description": "Distinguish personally verified behavior, quoted artifacts, official guidance, and untested hypotheses.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "00-start-here",
+      "words": 473
+    },
+    {
+      "path": "content/00-start-here/glossary.md",
+      "title": "Glossary of Android modding terms",
+      "description": "Definitions for first-time readers and cross-reference anchors.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "00-start-here",
+      "words": 292
+    },
+    {
+      "path": "content/00-start-here/knowledge-map.md",
+      "title": "Knowledge map and learning journeys",
+      "description": "How to navigate research content by device, difficulty, and task.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "00-start-here",
+      "words": 318
+    },
+    {
+      "path": "content/00-start-here/safety-and-ethics.md",
+      "title": "Safety, ethics, and privacy",
+      "description": "Essential precautions for custom recovery, rooting, ROM installation and publishing research.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "00-start-here",
+      "words": 315
+    },
+    {
+      "path": "content/01-foundations/adb-and-usb-debugging.md",
+      "title": "ADB fundamentals and Windows shell hygiene",
+      "description": "ADB connectivity, authorized device states, safe binary transfers and PowerShell pitfalls.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "01-foundations",
+      "words": 279
+    },
+    {
+      "path": "content/01-foundations/android-boot-and-partitions.md",
+      "title": "Android boot chain and partition architecture",
+      "description": "Understand boot, recovery, kernel, dtb/dtbo, modem and partition images.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "01-foundations",
+      "words": 374
+    },
+    {
+      "path": "content/01-foundations/avb-selinux-security.md",
+      "title": "AVB, VBMETA, SELinux and security properties",
+      "description": "Interpret integrity flags and security reports without false assurances.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "01-foundations",
+      "words": 276
+    },
+    {
+      "path": "content/01-foundations/root-and-recovery-models.md",
+      "title": "Root and recovery models: Magisk, KernelSU and TWRP",
+      "description": "How roots work and why Galaxy A10 uses recovery-based Magisk.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "01-foundations",
+      "words": 295
+    },
+    {
+      "path": "content/01-foundations/samsung-odin-and-firmware.md",
+      "title": "Samsung Odin, firmware packages and regional variants",
+      "description": "Practical guide to Odin, firmware slots, Download Mode and Samsung version constraints.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "01-foundations",
+      "words": 272
+    },
+    {
+      "path": "content/02-guides/adb-diagnostics.md",
+      "title": "Android diagnostic command reference",
+      "description": "A reference of read-only properties, logcat, telephony, storage and battery queries.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "02-guides",
+      "words": 226
+    },
+    {
+      "path": "content/02-guides/backup-and-restore-strategy.md",
+      "title": "A layered Android backup and restoration strategy",
+      "description": "Preserve boot chain, firmware, EFS and user data with multiple independent restoration paths.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "02-guides",
+      "words": 310
+    },
+    {
+      "path": "content/02-guides/custom-rom-installation.md",
+      "title": "Custom ROM installation decision tree",
+      "description": "Inspect OTA packages, choose appropriate recovery, plan clean flash and first boot.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "02-guides",
+      "words": 278
+    },
+    {
+      "path": "content/02-guides/device-discovery.md",
+      "title": "Identify an Android device before modifying it",
+      "description": "Read-only discovery playbook for model, SoC, firmware, ABI, bootloader and partitions.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "02-guides",
+      "words": 213
+    },
+    {
+      "path": "content/02-guides/firmware-verification.md",
+      "title": "Verify firmware packages and patched AP images",
+      "description": "Checksum, contents and transfer verification before Odin flashing.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "02-guides",
+      "words": 271
+    },
+    {
+      "path": "content/02-guides/inspect-rom-zip.md",
+      "title": "Audit a ROM ZIP before flashing",
+      "description": "Static inspection of package metadata, scripts, images, hash and developer trust.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "02-guides",
+      "words": 270
+    },
+    {
+      "path": "content/02-guides/rollback-and-unbrick.md",
+      "title": "Rollback and recovery after a failed flash",
+      "description": "Decision tree for Download Mode, Odin, stock recovery, and safe partition restoration.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "02-guides",
+      "words": 298
+    },
+    {
+      "path": "content/02-guides/safety-gates-and-runbook.md",
+      "title": "Preflash safety gates and recovery-first runbook",
+      "description": "A reusable decision checklist to stop unsafe flashing before a device becomes unbootable.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "02-guides",
+      "words": 736
+    },
+    {
+      "path": "content/02-guides/twrp-installation-principles.md",
+      "title": "Installing TWRP safely on Samsung A-only devices",
+      "description": "Recovery preparation and direct-to-recovery boot, with A10-specific lessons.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "02-guides",
+      "words": 284
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/README.md",
+      "title": "Samsung Galaxy A10 SM-A105F — field study",
+      "description": "End-to-end index for this exact model's 2026 experiments.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 186
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/artifact-manifest.md",
+      "title": "A105F artifact and checksum manifest",
+      "description": "Publishable checksums without exposing firmware binaries, device serials or private partitions.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 204
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/chronology.md",
+      "title": "A105F chronological experiment log",
+      "description": "A high-fidelity timeline from stock Samsung through the final /e/OS installation.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 462
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/device-dossier.md",
+      "title": "Galaxy A10 A105F: exact hardware and firmware dossier",
+      "description": "All model-specific observations needed to understand the experiment.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 367
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/end-to-end-runbook.md",
+      "title": "Galaxy A10 SM-A105F: complete 2026 field runbook",
+      "description": "Reconstructed, evidence-labeled journey from Samsung stock Android through Magisk, TWRP, LineageOS and /e/OS.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 1346
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/eos-4-install.md",
+      "title": "Migrating from LineageOS Recovery to /e/OS 4.1.1",
+      "description": "Exact installer audit, signature rejection, TWRP recovery and final installation.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 297
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/final-state.md",
+      "title": "Final operating state: /e/OS 4.1.1 (18 Nov 2026)",
+      "description": "Snapshot of the real working device and remaining unknowns.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 297
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/firmware-and-odin.md",
+      "title": "A105F stock firmware, Odin and first recovery failure",
+      "description": "Model-specific restore baseline, bootloader binary and failed plain-TWRP attempt.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 267
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/incident-ledger.md",
+      "title": "Incident ledger and failed paths",
+      "description": "What broke, the diagnostic evidence, fixes, and the wrong conclusions avoided.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 349
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/lineageos-23-install.md",
+      "title": "LineageOS 23.2 Android 16 on Galaxy A10",
+      "description": "Exact unofficial release metadata, script inspection and observed first boot.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 270
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/rooting-magisk-stock.md",
+      "title": "A105F Magisk 31.1 on stock Samsung Android 11",
+      "description": "Exact root model, verified AP patch outcomes and boot-key behavior.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 256
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/security-findings.md",
+      "title": "A105F security findings and trust boundaries",
+      "description": "Evidence on SELinux, AVB, old kernel configuration, root, crash log and unofficial ROM risk.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 316
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/twrp-and-magisk.md",
+      "title": "How TWRP 3.7 and Magisk coexisted on the A105F",
+      "description": "Detailed, validated Magisk-patched TWRP approach with checksums and Odin package structure.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 308
+    },
+    {
+      "path": "content/10-devices/samsung-galaxy-a10-sm-a105f/verified-backups.md",
+      "title": "A105F verified partition backup campaign",
+      "description": "Precise sizes, SHA-256 checks and failed backup methods.",
+      "status": "field-tested",
+      "updated": "2026-11-18",
+      "section": "10-devices",
+      "words": 387
+    },
+    {
+      "path": "content/20-roms/alternate-systems.md",
+      "title": "Alternate Android distributions and non-Android experiments",
+      "description": "Where official support, custom ROMs, GSIs and Linux experiments fit.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "20-roms",
+      "words": 219
+    },
+    {
+      "path": "content/20-roms/crdroid.md",
+      "title": "crDroid on the Galaxy A10",
+      "description": "Candidate assessment: customization versus outdated A10 maintenance.",
+      "status": "community-report",
+      "updated": "2026-11-18",
+      "section": "20-roms",
+      "words": 156
+    },
+    {
+      "path": "content/20-roms/eos.md",
+      "title": "/e/OS Galaxy A10: build status, design, privacy and tests",
+      "description": "Technical profile for unofficial /e/OS 4.1.1 and distinctions from official releases.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "20-roms",
+      "words": 255
+    },
+    {
+      "path": "content/20-roms/lineageos.md",
+      "title": "LineageOS on Galaxy A10: unofficial options",
+      "description": "What was researched, what was tested and why official A10 support matters.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "20-roms",
+      "words": 227
+    },
+    {
+      "path": "content/20-roms/oneui-ports.md",
+      "title": "Samsung One UI ports and the limits of official upgrades",
+      "description": "Research leads for community One UI 5/6/7 A10 ports without implying official Samsung support.",
+      "status": "community-report",
+      "updated": "2026-11-18",
+      "section": "20-roms",
+      "words": 280
+    },
+    {
+      "path": "content/20-roms/rom-selection-framework.md",
+      "title": "Choosing a ROM: UI, speed, security, maintenance",
+      "description": "A multi-dimensional decision framework beyond version numbers.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "20-roms",
+      "words": 262
+    },
+    {
+      "path": "content/30-troubleshooting/adb-and-transfers.md",
+      "title": "Fix unreliable ADB pushes and raw-stream backups",
+      "description": "Diagnose EOF, reconnects, missing files and truncated images.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "30-troubleshooting",
+      "words": 210
+    },
+    {
+      "path": "content/30-troubleshooting/app-crashes.md",
+      "title": "Read logcat crash reports without overdiagnosing",
+      "description": "How to attribute crashes to specific Android packages.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "30-troubleshooting",
+      "words": 162
+    },
+    {
+      "path": "content/30-troubleshooting/boot-and-vbmeta.md",
+      "title": "Boot loops, VBMETA and recovery footer errors",
+      "description": "Handling rejected recovery images and secure rollback.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "30-troubleshooting",
+      "words": 195
+    },
+    {
+      "path": "content/30-troubleshooting/index.md",
+      "title": "Android recovery troubleshooting index",
+      "description": "Symptom-oriented routing to safe read-only diagnosis before destructive repair.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "30-troubleshooting",
+      "words": 190
+    },
+    {
+      "path": "content/30-troubleshooting/root-mode.md",
+      "title": "Why `su` is missing after a normal reboot",
+      "description": "Understand no-boot-ramdisk Samsung Magisk boot modes.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "30-troubleshooting",
+      "words": 170
+    },
+    {
+      "path": "content/30-troubleshooting/signature-and-recovery.md",
+      "title": "Signature verification failed during ROM sideload",
+      "description": "Explain host transfer success versus recovery trust rejection and fallback choice.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "30-troubleshooting",
+      "words": 200
+    },
+    {
+      "path": "content/30-troubleshooting/telephony-and-data.md",
+      "title": "SIM calls work but mobile data does not",
+      "description": "Dual-SIM Android debugging without premature modem or APN changes.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "30-troubleshooting",
+      "words": 231
+    },
+    {
+      "path": "content/30-troubleshooting/twrp-storage-and-encryption.md",
+      "title": "TWRP backup fails to create directory",
+      "description": "Differentiate read-only system selection, encryption, storage and mount failures.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "30-troubleshooting",
+      "words": 237
+    },
+    {
+      "path": "content/40-security/privacy-and-data-retention.md",
+      "title": "Publishing Android research without leaking sensitive data",
+      "description": "Redaction, backup encryption and provenance-safe publishing.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "40-security",
+      "words": 221
+    },
+    {
+      "path": "content/40-security/rom-supply-chain.md",
+      "title": "Trusting an unofficial ROM: complete supply-chain checklist",
+      "description": "Threat modeling, reproducibility and limits of static ZIP inspection.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "40-security",
+      "words": 276
+    },
+    {
+      "path": "content/40-security/selinux-kernel-and-root.md",
+      "title": "SELinux, kernel configuration, debug surfaces and root",
+      "description": "Assess real controls and limitations on a rooted or custom-ROM device.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "40-security",
+      "words": 237
+    },
+    {
+      "path": "content/40-security/unofficial-rom-threat-model.md",
+      "title": "Unofficial ROM trust model: what a ZIP audit can and cannot prove",
+      "description": "Security boundaries for community ROMs, provenance, hidden privilege, OTA channels and reproducibility.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "40-security",
+      "words": 639
+    },
+    {
+      "path": "content/40-security/verified-boot-and-lock-state.md",
+      "title": "Verified Boot trust versus Android properties",
+      "description": "Understand lock-state ambiguity on unofficial firmware.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "40-security",
+      "words": 185
+    },
+    {
+      "path": "content/50-lab/building-from-source.md",
+      "title": "Building AOSP/LineageOS: feasibility and limitations",
+      "description": "Why official upstream code cannot make an unsupported A10 build official.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "50-lab",
+      "words": 277
+    },
+    {
+      "path": "content/50-lab/kernel-introspection.md",
+      "title": "Kernel configuration capture and baseline analysis",
+      "description": "How /proc/config.gz and sysctls informed A105F security research.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "50-lab",
+      "words": 192
+    },
+    {
+      "path": "content/50-lab/network-and-runtime-tools.md",
+      "title": "Research tooling: ADB, tcpdump, Frida and APK inspection",
+      "description": "Practical capabilities, concrete A105F findings and failure boundaries.",
+      "status": "field-informed",
+      "updated": "2026-11-18",
+      "section": "50-lab",
+      "words": 272
+    },
+    {
+      "path": "content/90-site-blueprint/README.md",
+      "title": "Website blueprint overview",
+      "description": "Product goal, quality bar, principles and phased handoff to Next.js.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 254
+    },
+    {
+      "path": "content/90-site-blueprint/accessibility-performance.md",
+      "title": "Accessibility, performance and quality acceptance criteria",
+      "description": "WCAG-aligned UX and reliable performance on low-end research devices.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 278
+    },
+    {
+      "path": "content/90-site-blueprint/architecture.md",
+      "title": "Next.js implementation architecture",
+      "description": "Official scaffolding path and design for a content-first App Router knowledge hub.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 367
+    },
+    {
+      "path": "content/90-site-blueprint/brand-and-positioning.md",
+      "title": "Brand: ROMcraft Fieldnotes",
+      "description": "Naming, tagline, visual personality and content positioning.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 200
+    },
+    {
+      "path": "content/90-site-blueprint/content-model.md",
+      "title": "Documentation content model and frontmatter schema",
+      "description": "The editorial contract for Markdown/MDX, provenance, versions and search.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 240
+    },
+    {
+      "path": "content/90-site-blueprint/design-system.md",
+      "title": "Modern visual and responsive design system",
+      "description": "Typography, tokens, color, spacing, content blocks and mobile behavior.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 259
+    },
+    {
+      "path": "content/90-site-blueprint/editorial-operations.md",
+      "title": "Editorial governance and maintenance",
+      "description": "How to keep pages current, reproducible and safe to publish.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 238
+    },
+    {
+      "path": "content/90-site-blueprint/example-page-wireframe.md",
+      "title": "Article page layout specification",
+      "description": "A textual wireframe for desktop and mobile pages.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 259
+    },
+    {
+      "path": "content/90-site-blueprint/implementation-roadmap.md",
+      "title": "From Markdown archive to production knowledge hub",
+      "description": "Sequential build phases, milestones, dependencies and acceptance criteria.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 402
+    },
+    {
+      "path": "content/90-site-blueprint/information-architecture.md",
+      "title": "Navigation, routes and reader journeys",
+      "description": "How the website should organize hundreds of future articles.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 213
+    },
+    {
+      "path": "content/90-site-blueprint/release-handoff.md",
+      "title": "Website release and GitHub handoff checklist",
+      "description": "How to install, validate, publish and maintain the documentation site with no secrets in Git.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 455
+    },
+    {
+      "path": "content/90-site-blueprint/search-seo-and-discovery.md",
+      "title": "Search, SEO, reference discovery and cross-linking",
+      "description": "Make deeply technical documentation fast to find and easy to verify.",
+      "status": "planned",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 251
+    },
+    {
+      "path": "content/90-site-blueprint/source-registry.md",
+      "title": "Authoritative references and research leads",
+      "description": "Link registry with authority levels and why each source matters.",
+      "status": "official-doc",
+      "updated": "2026-11-18",
+      "section": "90-site-blueprint",
+      "words": 272
+    }
+  ],
+  "buildVerified": false,
+  "note": "Offline content checks pass; npm install and Next.js production build require network-enabled machine"
+}
